@@ -27,7 +27,8 @@
 		"tslib": "^2.5.0",
 		"typescript": "^5.0.4",
 		"typescript-svelte-plugin": "^0.3.23",
-		"vite": "^4.3.5"
+		"vite": "^4.3.5",
+		"zod": "^3.21.4"
 	},
 	"type": "module"
 }
