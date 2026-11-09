@@ -1,4 +1,4 @@
-import { wait } from '$lib/utils';
+import { wait } from '#lib/utils.js';
 
 export const actions = {
 	default: async function ({ request }) {
@@ -7,7 +7,7 @@ export const actions = {
 
 		const waitSec = data.get('waitSec') ?? '';
 
-		await wait(Number(`${waitSec}` ?? 0) * 1000);
+		await wait(Number(`${waitSec}`) * 1000);
 		return { msg: `Hello ${username}!` };
 	}
 };
