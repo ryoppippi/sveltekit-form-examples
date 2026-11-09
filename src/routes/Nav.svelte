@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 </script>
 
 <nav>
@@ -8,14 +8,14 @@
 	</ul>
 	<ul>
 		<li>
-			{#if $page.route.id === '/'}
+			{#if page.route.id === '/'}
 				sveltekit
 			{:else}
 				<a href="/"> sveltekit </a>
 			{/if}
 		</li>
 		<li>
-			{#if $page.route.id === '/superforms'}
+			{#if page.route.id === '/superforms'}
 				superforms
 			{:else}
 				<a href="/superforms">superforms</a>
