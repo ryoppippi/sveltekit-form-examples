@@ -35,7 +35,7 @@
 		"#lib/*": "./src/lib/*"
 	},
 	"engines": {
-		"node": "24.x"
+		"node": "24.22.3"
 	},
 	"type": "module"
 }
